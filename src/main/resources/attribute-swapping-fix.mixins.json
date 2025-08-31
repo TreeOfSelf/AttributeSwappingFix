@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "me.treeofself.attributeswappingfix.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"LivingEntityAccessor",
+		"ServerPlayNetworkHandlerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
