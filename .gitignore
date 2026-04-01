@@ -31,6 +31,8 @@ bin/
 # fabric
 
 run/
+server/run-with-gradle-jdk.sh
+server/run-with-gradle-jdk.bat
 
 # java
 

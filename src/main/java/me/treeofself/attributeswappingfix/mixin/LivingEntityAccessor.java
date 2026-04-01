@@ -1,16 +1,15 @@
 package me.treeofself.attributeswappingfix.mixin;
 
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
+import java.util.Map;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
-
-import java.util.Map;
 
 @Mixin(LivingEntity.class)
 public interface LivingEntityAccessor {
 
-    @Invoker("getEquipmentChanges")
-    Map<EquipmentSlot, ItemStack> invokeGetEquipmentChanges();
+	@Invoker("collectEquipmentChanges")
+	Map<EquipmentSlot, ItemStack> invokeCollectEquipmentChanges();
 }

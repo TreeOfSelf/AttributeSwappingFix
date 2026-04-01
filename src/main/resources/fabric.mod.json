@@ -2,15 +2,12 @@
 	"schemaVersion": 1,
 	"id": "attribute-swapping-fix",
 	"version": "${version}",
-	"name": "attribute-swapping-fix",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Attribute Swapping Fix",
+	"description": "Forces equipment attribute updates when swapping items or hotbar slots.",
 	"authors": [
 		"Me!"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+	"contact": {},
 	"license": "CC0-1.0",
 	"icon": "assets/attribute-swapping-fix/icon.png",
 	"environment": "*",
@@ -23,12 +20,9 @@
 		"attribute-swapping-fix.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.21.8",
-		"java": ">=21",
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~26.1.1",
+		"java": ">=25",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
