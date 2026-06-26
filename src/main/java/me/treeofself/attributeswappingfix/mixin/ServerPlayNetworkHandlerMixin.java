@@ -32,6 +32,6 @@ public class ServerPlayNetworkHandlerMixin {
 	private void forceEquipmentUpdate() {
 		Player playerEntity = player;
 		playerEntity.resetAttackStrengthTicker();
-		((LivingEntityAccessor) player).invokeCollectEquipmentChanges();
+		((LivingEntityAccessor) player).invokeCollectEquipmentChanges(new java.util.HashMap<>());
 	}
 }

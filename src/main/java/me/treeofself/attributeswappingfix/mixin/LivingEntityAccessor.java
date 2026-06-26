@@ -11,5 +11,5 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 public interface LivingEntityAccessor {
 
 	@Invoker("collectEquipmentChanges")
-	Map<EquipmentSlot, ItemStack> invokeCollectEquipmentChanges();
+	Map<EquipmentSlot, ItemStack> invokeCollectEquipmentChanges(Map<EquipmentSlot, ItemStack> equipmentChanges);
 }
